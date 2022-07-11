@@ -7,6 +7,10 @@ export class FormAddContacts extends Component{
     name: '',
     number: '',
   }
+
+  static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+  }
     
     hendleChange = e => {
     const { name, value } = e.currentTarget;
@@ -66,6 +70,6 @@ export class FormAddContacts extends Component{
     }
 };
 
-FormAddContacts.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-}
+// FormAddContacts.propTypes = {
+//   onSubmit: PropTypes.func.isRequired,
+// }
